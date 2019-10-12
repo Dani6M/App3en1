@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculadora gastos de viaje"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="12pt"
+        android:gravity="center"/>
+    <EditText
+        android:id="@+id/etxKm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Kilómetros Recorridos:"
+        android:textSize="9pt"
+        android:inputType="numberDecimal"/>
+    <EditText
+    android:id="@+id/etxPrecio"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:hint="Precio de la gasolina (Por litro):"
+    android:textSize="9pt"
+    android:inputType="numberDecimal"/>
+    <EditText
+        android:id="@+id/etxLitros"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Litros invertidos:"
+        android:textSize="9pt"
+        android:inputType="numberDecimal"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Duración del Viaje"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="11pt"
+        android:gravity="center"/>
+    <EditText
+        android:id="@+id/etxHoras"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Horas:"
+        android:textSize="9pt"
+        android:inputType="numberDecimal"/>
+    <EditText
+        android:id="@+id/etxMin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Minutos:"
+        android:textSize="9pt"
+        android:inputType="numberDecimal"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Seleccione un opción:"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="11pt"
+        android:gravity="center"/>
+    <RadioGroup
+        android:id="@+id/rgpOp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/rdb100KM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calcular X cada 1 KM/H"
+            android:textSize="9pt"
+            android:textColor="@android:color/darker_gray"
+            android:buttonTint="@android:color/holo_blue_bright"/>
+        <RadioButton
+            android:id="@+id/rdb1KM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calcular X cada 100 KM/H"
+            android:textSize="9pt"
+            android:textColor="@android:color/darker_gray"
+            android:buttonTint="@android:color/holo_blue_bright"/>
+    </RadioGroup>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="11pt"
+        android:layout_marginTop="10dp"
+        android:hint="Resultado"
+        android:textColor="@android:color/darker_gray"
+        android:id="@+id/txvResultado"
+        android:gravity="center"
+        android:textColorHint="@android:color/holo_blue_light"/>
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calcular"
+        android:textSize="9pt"
+        android:layout_marginEnd="5dp"/>
+    <Button
+    android:id="@+id/btnRegresar"
+    android:text="Regresar"
+    android:textSize="9pt"
+    android:layout_marginEnd="10dp"
+        android:layout_width="130dp"
+        android:layout_height="50dp"/>
+</LinearLayout>
